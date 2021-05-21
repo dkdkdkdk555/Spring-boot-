@@ -1,8 +1,10 @@
 package com.ukha.hellospring.repository;
 
 import com.ukha.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
+
 
 public class MemoryMemberRepository implements MemberRepository {
 
