@@ -5,10 +5,12 @@ import com.ukha.hellospring.repository.MemberRepository;
 import com.ukha.hellospring.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional //데이터를 변경하거나 저장할땐 항상 있어야 한다.
 public class MemberService {
 
     private final MemberRepository memberRepository;
