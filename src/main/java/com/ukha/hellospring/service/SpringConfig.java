@@ -1,5 +1,6 @@
 package com.ukha.hellospring.service;
 
+import com.ukha.hellospring.aop.TimeTraceAop;
 import com.ukha.hellospring.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -59,4 +60,9 @@ public class SpringConfig {
 //         db가 선정되고 나서 손쉽게 옮길(?) 수 있다.
 //        */
 //   }
+
+//    @Bean // aop객체도 빈에 등록할 수 있다.
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
+//    }
 }
